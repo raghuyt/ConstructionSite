@@ -1,0 +1,183 @@
+/* =========================================================
+   Responsive Overrides — Crestline Developers
+   ========================================================= */
+
+@media (max-width: 1199.98px) {
+  .site-navbar .nav-link {
+    padding: 0.5rem 0.55rem !important;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  :root {
+    --nav-h: 70px;
+  }
+
+  section {
+    padding: 70px 0;
+  }
+
+  .hero-swiper,
+  .hero-slide {
+    min-height: 560px;
+    height: 90vh;
+  }
+
+  .social-float {
+    display: none;
+  }
+
+  .sticky-contact-bar {
+    transform: translateY(0);
+  }
+
+  body {
+    padding-bottom: 60px;
+  }
+
+  .float-whatsapp {
+    bottom: 80px;
+    right: 16px;
+  }
+
+  .back-to-top {
+    bottom: 80px;
+    right: auto;
+    left: 16px;
+  }
+
+  .page-hero {
+    padding: 130px 0 60px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767.98px) {
+  section {
+    padding: 56px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-swiper .swiper-button-next,
+  .hero-swiper .swiper-button-prev {
+    display: none;
+  }
+
+  .stat-item {
+    margin-bottom: 1.5rem;
+  }
+
+  .filter-bar {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filter-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .map-wrap {
+    height: 280px;
+  }
+
+  .about-experience-badge {
+    padding: 0.85rem 1rem;
+  }
+
+  .about-experience-badge .num {
+    font-size: 1.75rem;
+  }
+
+  .sticky-contact-bar .contact-text {
+    display: none;
+  }
+
+  .btn-primary-custom,
+  .btn-outline-custom,
+  .btn-dark-custom {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.8rem;
+  }
+
+  .cta-section .btn-primary-custom,
+  .cta-section .btn-outline-custom {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-swiper,
+  .hero-slide {
+    height: 100svh;
+    min-height: 520px;
+  }
+
+  .loader-logo {
+    font-size: 1.2rem;
+  }
+
+  .project-meta {
+    gap: 0.4rem 0.85rem;
+  }
+
+  .estimator-result .amount {
+    font-size: 1.5rem;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+  .hero-content h1 {
+    font-size: 4.25rem;
+  }
+
+  .container-xl-custom {
+    max-width: 1320px;
+  }
+}
+
+/* Landscape phones */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero-swiper,
+  .hero-slide {
+    height: auto;
+    min-height: 100vh;
+    padding: 100px 0 60px;
+  }
+}
+
+/* Print */
+@media print {
+  #loader,
+  #scroll-progress,
+  .float-whatsapp,
+  .back-to-top,
+  .social-float,
+  .sticky-contact-bar,
+  .site-navbar {
+    display: none !important;
+  }
+
+  body {
+    padding: 0;
+    background: white;
+    color: black;
+  }
+}
